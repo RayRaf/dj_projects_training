@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block  title %} Добро пожаловать {% endblock %}
+
+{% block content %}
+
+
+<h1>Список проктов</h1>
+
+<ul>
+    {% for project in projects %}
+        <li> {{project.tag}} - <a href="{% url 'projects:project_edit' project.pk %}"> Редактировать</a> </li>
+    {% endfor %}
+</ul>
+    <a href="{% url 'projects:project_create' %}">Создать новый</a>
+{% endblock %}
