@@ -1,12 +1,5 @@
-test1
-readme
-test pull req
+### Инструкция к запуску
 
-git push test 1
-
-
-git push test 2  
-test
-hello from branch dev
-git push test 2
-
+1. Установить все зависимости командой  ``` pip install -r requirements.txt ``` или только django командой ``` pip install django ```.
+2. Убедиться, что терминал в той же директории, где файл manage.py командой ```ls```
+3. Выполнить запуск командой ```python manage.py runserver```.
